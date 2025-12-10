@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ángel Gómez — Portafolio / Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ==========================
+    BOTÓN HAMBURGUESA (MÓVIL)
+=========================== -->
+<div class="menu-toggle" onclick="toggleSidebar()">☰</div>
+
+<!-- ==========================
+        SIDEBAR IZQUIERDO
+=========================== -->
+<aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+
+        <h2 class="side-title">Menú</h2>
+
+        <!-- ❌ Eliminado: Botón Contrátame -->
+        <!-- <button class="side-btn" onclick="openModal('hireModal')">🤝 Contrátame</button> -->
+
+        <a href="#proyectos" class="side-btn">🚀 Ver Proyectos</a>
+        <a href="CV-Angel.pdf" download class="side-btn">📄 Descargar CV</a>
+
+    </div>
+</aside>
+
+
+<!-- ==========================
+            HERO
+=========================== -->
+<header class="hero">
+
+    <!-- SWITCH MODO OSCURO -->
+    <div class="dark-toggle">
+        <input type="checkbox" id="darkSwitch">
+        <label for="darkSwitch" class="toggle-label">
+            <span class="toggle-circle"></span>
+        </label>
+    </div>
+
+    <img src="foto.png" alt="Ángel Gómez" class="hero-img">
+
+    <h1>Ángel Gómez <span class="gmzyy">@gmzyy</span></h1>
+    <p class="subtitle">Desarrollador Full Stack — React • Next.js • Node • MongoDB</p>
+
+    <div class="socials">
+        <a href="https://github.com/gmzyy" target="_blank" class="social-icon">GitHub</a>
+        <a href="mailto:angelgom042@gmail.com" class="social-icon">Email</a>
+        <a href="tel:+522218226470" class="social-icon">Teléfono</a>
+    </div>
+
+</header>
+
+<!-- ==========================
+        ACERCA DE MÍ
+=========================== -->
+<section class="section">
+    <h2>Acerca de mí</h2>
+    <p>
+        Desarrollador con experiencia en aplicaciones empresariales y proyectos web modernos.
+        Especializado en React, Next.js y Node.js con bases de datos MongoDB y MySQL.
+        Me apasiona crear interfaces limpias, rápidas y sistemas escalables con buenas prácticas,
+        arquitectura clara y enfoque en la experiencia del usuario.
+    </p>
+</section>
+
+<!-- ==========================
+        EXPERIENCIA
+=========================== -->
+<section class="section">
+    <h2>Experiencia Laboral</h2>
+
+    <div class="card" onclick="openModal('expModal')">
+        <h3>Softech — Desarrollador Full Stack</h3>
+        <p><em>Estadías + Contrato (1 año)</em></p>
+
+        <ul class="visible-achievements">
+            <li>✔ Reduje tiempos de consulta en MySQL/MongoDB hasta un 40%.</li>
+            <li>✔ Implementé APIs REST seguras con Node.js + JWT.</li>
+            <li>✔ Desarrollé módulos completos en TSX + Tailwind.</li>
+        </ul>
+
+        <span class="more">Ver más detalles →</span>
+    </div>
+</section>
+
+<!-- ==========================
+        STACK TECNOLÓGICO
+=========================== -->
+<section class="section">
+    <h2>Stack Tecnológico</h2>
+
+    <div class="skills-tech">
+
+        <div class="skill-category">
+            <h3>Lenguajes</h3>
+            <div class="skills-row">
+                <span>JavaScript</span>
+                <span>TypeScript</span>
+                <span>C#</span>
+                <span>Kotlin</span>
+                <span>PHP</span>
+                <span>Python</span>
+                <span>SQL</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skills-row">
+                <span>React</span>
+                <span>Next.js</span>
+                <span>TailwindCSS</span>
+                <span>Angular</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3>Backend</h3>
+            <div class="skills-row">
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>.NET MVC</span>
+                <span>REST APIs</span>
+                <span>JWT Auth</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3>Bases de Datos</h3>
+            <div class="skills-row">
+                <span>MySQL</span>
+                <span>MongoDB</span>
+                <span>SQL Server</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3>Data / ML</h3>
+            <div class="skills-row">
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>Weka</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3>Herramientas</h3>
+            <div class="skills-row">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Postman</span>
+                <span>Jupyter Notebook</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ==========================
+        PROYECTOS
+=========================== -->
+<section class="section" id="proyectos">
+    <h2>Proyectos Destacados</h2>
+
+    <div class="projects-pro">
+
+        <div class="project-card-pro">
+            <h3>Soporte Empresarial</h3>
+            <p>Sistema interno con roles, tickets y panel administrativo.</p>
+            <div class="tags">
+                <span>React</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/gmzyy/SoporteTSX" target="_blank">Código</a>
+            </div>
+        </div>
+
+        <div class="project-card-pro">
+            <h3>Barbería Web</h3>
+            <p>Sistema de reservas online + notificaciones en tiempo real.</p>
+            <div class="tags">
+                <span>Next.js</span><span>TailwindCSS</span><span>MySQL</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/gmzyy/BarberAngeles" target="_blank">Código</a>
+            </div>
+        </div>
+
+        <div class="project-card-pro">
+            <h3>Aplicaciones Kotlin</h3>
+            <p>Apps Android y Smart TV con UI optimizada.</p>
+            <div class="tags">
+                <span>Kotlin</span><span>Android</span><span>REST API</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/gmzyy/SmartWatchApps" target="_blank">Código</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ==========================
+        EDUCACIÓN
+=========================== -->
+<section class="section">
+    <h2>Educación</h2>
+    <div class="card">
+        <h3>Universidad Tecnológica de Puebla</h3>
+        <p>TSU + Ingeniería en Desarrollo de Software (2022–2025)</p>
+    </div>
+</section>
+
+<!-- ==========================
+        MODALES
+=========================== -->
+
+<!-- EXPERIENCIA -->
+<div id="expModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('expModal')">&times;</span>
+        <h2>Detalles — Softech</h2>
+        <ul>
+            <li>Desarrollo de módulos con TSX + Tailwind.</li>
+            <li>Optimización de consultas SQL/NoSQL.</li>
+            <li>APIs con autenticación JWT.</li>
+            <li>Metodologías ágiles (Scrum/Kanban).</li>
+        </ul>
+    </div>
+</div>
+
+<!-- CONTRATAR -->
+<div id="hireModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('hireModal')">&times;</span>
+        <h2>Quiero contratarte</h2>
+
+        <form class="hire-form">
+            <input type="text" placeholder="Tu nombre">
+            <input type="email" placeholder="Tu correo">
+            <textarea placeholder="Descripción del proyecto"></textarea>
+            <button>Enviar</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
